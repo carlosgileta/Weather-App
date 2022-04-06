@@ -46,7 +46,7 @@ function Ubication() {
             getCurrentWeather(URL)
            .then(response=>{
 >>>>>>> refs/remotes/origin/main
-               console.log(response.data);
+               
                setTemp(response.data.main.temp);
                setTempMax(response.data.main.temp_max);
                setTempMin(response.data.main.temp_min);
