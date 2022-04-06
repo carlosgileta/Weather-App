@@ -20,6 +20,7 @@ function Ubication() {
     const[degrees,setDegrees]= useState(0)
     const[speed,setSpeed] = useState(0)
     const[isCelsious,setIsCelsious] = useState(false)
+    const[icon,setIcon] = useState([])
     
 
     
@@ -47,7 +48,8 @@ function Ubication() {
                setHumidity(response.data.main.humidity);
                setSeaLevel(response.data.main.sea_level);
                setDegrees(response.data.wind.deg);
-               setSpeed(response.data.wind.speed)
+               setSpeed(response.data.wind.speed);
+               setIcon(response.data.weather[0].icon);
 
            })
              .catch(err =>{
@@ -65,6 +67,7 @@ function Ubication() {
       <div className='prueba'>
        <div className='container1'>   
        <div className='containerbottontemp'>
+       <img className='icon' src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
       <h2 className='temp'> { isCelsious ? temp : temp *9/5 +32}{
       isCelsious ? '°C' : '°F'
       
@@ -88,7 +91,7 @@ function Ubication() {
     <div className='container03'>
     <h2>Sea Level: {seaLevel} m</h2>
     <h2>Degrees: {degrees}°</h2>
-    <h2>Speed of Wind: {speed}m</h2>
+    <h2>Speed of Wind: {speed}m/s</h2>
     </div>
     </div>
     </div>

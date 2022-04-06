@@ -6,7 +6,16 @@
     font-weight: bold;
   color: #333536;
 }
-
+.icon{
+    border-radius: 50px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    background-color: darkgray;
+}
+.icon:hover{
+    background-color: #917878; /* Green */
+    color: white;
+}
 .prueba{
     display: flex;
     align-items: center;
@@ -30,8 +39,8 @@
     color: white;
 }
 .container1{
-    width: 450px;
-    background-color: #ffffff;
+    width: 500px;
+    background-color: #d1d1d1;
     opacity: 0.5;
     filter: alpha(opacity=60);
     border-radius: 15px;
