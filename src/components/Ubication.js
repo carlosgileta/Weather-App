@@ -29,11 +29,11 @@ function Ubication() {
     }
     navigator.geolocation.getCurrentPosition(success)
     
-   
+    const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=6f4c2fe086168314e2cc34055654c976&units=metric`;
 
     useEffect(()=>{
         setTimeout(() => {
-            getCurrentWeather(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=6f4c2fe086168314e2cc34055654c976&units=metric`)
+            getCurrentWeather(URL)
            .then(response=>{
                console.log(response.data);
                setTemp(response.data.main.temp);
@@ -55,7 +55,7 @@ function Ubication() {
         }, 100);
        
     
-    },[`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=6f4c2fe086168314e2cc34055654c976&units=metric`])
+    },[URL])
    
 
 
