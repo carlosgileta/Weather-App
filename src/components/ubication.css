@@ -1,0 +1,70 @@
+.dad{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 300px;
+    font-weight: bold;
+  color: #333536;
+}
+
+.prueba{
+    display: flex;
+    align-items: center;
+  height:100vh ;  
+}
+.containerbottontemp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.button{
+   width: 80px;
+   height: 45px;
+   border-radius: 15px;
+   -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color: #666666; /* Green */
+    color: white;
+}
+.container1{
+    width: 450px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    filter: alpha(opacity=60);
+    border-radius: 15px;
+}
+.temp{
+    font-size: 50px;
+}
+.secondChildren{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 450px;
+  
+}
+
+.container01{
+    background-color: #ffffff;
+    opacity: 0.5;
+    filter: alpha(opacity=60);
+    border-radius: 15px;
+}
+.container02{
+    background-color: #ffffff;
+    opacity: 0.5;
+    filter: alpha(opacity=60);
+    border-radius: 15px;
+}
+.container03{
+    background-color: #ffffff;
+    opacity: 0.5;
+    filter: alpha(opacity=60);
+    border-radius: 15px;
+}
+
+
+
