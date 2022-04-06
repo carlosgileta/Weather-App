@@ -68,8 +68,8 @@ function Ubication() {
        <div className='container1'>   
        <div className='containerbottontemp'>
        <img className='icon' src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="" />
-      <h2 className='temp'> { isCelsious ? temp : temp *9/5 +32}{
-      isCelsious ? '°C' : '°F'
+      <h2 className='temp'> { isCelsious ? temp : (temp *9/5 +32).toFixed(2)}{
+    isCelsious ? '°C' : '°F'
       
        }</h2>
       <button className='button' onClick={() => setIsCelsious(!isCelsious) }>Change Degrees</button>
