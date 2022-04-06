@@ -30,23 +30,14 @@ function Ubication() {
     }
     navigator.geolocation.getCurrentPosition(success)
     
-<<<<<<< HEAD
+
    const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=6f4c2fe086168314e2cc34055654c976&units=metric`;
 
     useEffect(()=>{
         setTimeout(() => {
            
             getCurrentWeather(URL)
-            .then(response=>{
-=======
-    const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=6f4c2fe086168314e2cc34055654c976&units=metric`;
-
-    useEffect(()=>{
-        setTimeout(() => {
-            getCurrentWeather(URL)
-           .then(response=>{
->>>>>>> refs/remotes/origin/main
-               
+            .then(response=>{               
                setTemp(response.data.main.temp);
                setTempMax(response.data.main.temp_max);
                setTempMin(response.data.main.temp_min);
